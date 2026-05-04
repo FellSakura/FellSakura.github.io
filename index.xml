@@ -13,7 +13,62 @@
         <pubDate>Fri, 01 May 2026 20:35:45 +0800</pubDate>
         
         <guid>https://FellSakura.github.io/p/ndm%E4%B8%8B%E8%BD%BD%E5%99%A8/</guid>
-        <description></description>
+        <description>&lt;h1 id=&#34;ndm下载器介绍&#34;&gt;NDM下载器介绍
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NDM (Neat Download Manager)&lt;/strong&gt; 是一款免费、轻量的多线程下载工具，支持 Windows 与 MacOS 系统，功能和 &lt;strong&gt;IDM (Internet Download Manager&lt;/strong&gt; 类似。&lt;/p&gt;
+&lt;h2 id=&#34;软件特色&#34;&gt;软件特色
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;安装包体积小巧，Windows 安装包仅约 900KB；&lt;/li&gt;
+&lt;li&gt;支持 HTTP、HTTPS、FTP 常见下载协议；&lt;/li&gt;
+&lt;li&gt;兼容 HTTP 代理、SOCKS 代理；&lt;/li&gt;
+&lt;li&gt;最高支持 &lt;strong&gt;32线程&lt;/strong&gt; 多线程加速下载；&lt;/li&gt;
+&lt;li&gt;自带断点续传，中断后可恢复下载；&lt;/li&gt;
+&lt;li&gt;免费无广告，轻量化占用资源低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装ndmwindows-教程&#34;&gt;安装NDM（Windows 教程）
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;访问官方网站下载安装包：&lt;a class=&#34;link&#34; href=&#34;https://www.neatdownloadmanager.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NDM官网&lt;/a&gt;
+&lt;img src=&#34;Photos/Download.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击运行下载好的安装包&lt;br&gt;
+&lt;img src=&#34;Photos/install1.png&#34;/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 &lt;strong&gt;Browse&lt;/strong&gt; 自定义安装路径，建议安装至D盘
+&lt;img src=&#34;Photos/install2.png&#34;/&gt;
+&lt;img src=&#34;Photos/install3.png&#34;/&gt;
+&lt;img src=&#34;Photos/install4.png&#34;/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按需选择是否创建桌面快捷方式，依次点击 &lt;code&gt;Next&lt;/code&gt;、&lt;code&gt;Install&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;Photos/install5.png&#34;/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等待安装完成后点击 &lt;code&gt;Finish&lt;/code&gt; 结束安装&lt;br&gt;
+&lt;img src=&#34;Photos/install6.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NDM 主程序界面预览
+&lt;img src=&#34;Photos/Interface.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;浏览器配置ndm插件edge-为例&#34;&gt;浏览器配置NDM插件（Edge 为例）
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开 NDM 软件，点击顶部 &lt;code&gt;Browsers&lt;/code&gt; 选项
+&lt;img src=&#34;Photos/Interface.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 &lt;code&gt;Add Edge Extension&lt;/code&gt; 自动跳转浏览器扩展商店
+&lt;img src=&#34;Photos/Browsers.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Edge 浏览器中完成添加与授权配置即可使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
         </item>
         <item>
         <title>MyFirstBlog</title>
