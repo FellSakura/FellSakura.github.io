@@ -7,7 +7,96 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>FellSakura</copyright>
-        <lastBuildDate>Fri, 01 May 2026 20:35:45 +0800</lastBuildDate><atom:link href="https://FellSakura.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Jun 2026 13:49:05 +0800</lastBuildDate><atom:link href="https://FellSakura.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>LuckPerms相关命令</title>
+        <link>https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Sat, 06 Jun 2026 13:49:05 +0800</pubDate>
+        
+        <guid>https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;img src="https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/LuckPerms.jpg" alt="Featured image of post LuckPerms相关命令" /&gt;&lt;h1 id=&#34;关于luckperms的相关指令&#34;&gt;关于LuckPerms的相关指令
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt; 对于不同的服务端而言，基本命令也有些不同，下面以&lt;strong&gt;Paper端&lt;/strong&gt;演示&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Velocity&lt;/th&gt;
+					&lt;th&gt;Paper&lt;/th&gt;
+					&lt;th&gt;BungeeCord&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;/lpv&lt;/td&gt;
+					&lt;td&gt;/lp&lt;/td&gt;
+					&lt;td&gt;/lpb&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;1-通用命令&#34;&gt;1. 通用命令
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/lp editor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开网页编辑器管理权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp check &amp;lt;玩家&amp;gt; &amp;lt;权限&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看玩家权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp tree
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;生成权限树&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp export
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;导出数据&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp import &amp;lt;路径&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;导入数据&lt;/p&gt;
+&lt;h2 id=&#34;2-用户管理命令&#34;&gt;2. 用户管理命令
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; info 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看玩家权限信息&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; parent add &amp;lt;组&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将玩家加入组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission set &amp;lt;权限&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对玩家启用某个权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission set &amp;lt;权限&amp;gt; false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对玩家禁用某个权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission unset &amp;lt;权限&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从玩家身上移除权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;列出玩家所有权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission settemp &amp;lt;权限&amp;gt; true &amp;lt;时间&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对玩家临时启用某个权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission settemp &amp;lt;权限&amp;gt; false &amp;lt;时间&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对玩家临时禁用某个权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;user&amp;gt; showtracks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示玩家的权限组路线&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;用户名&amp;gt; parent add &amp;lt;权限组名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看玩家继承的组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家1&amp;gt; clone &amp;lt;玩家2&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将玩家1的数据复制到玩家2身上&lt;/p&gt;
+&lt;h3 id=&#34;前后缀&#34;&gt;前后缀
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta setprefix &amp;lt;权重&amp;gt; &amp;lt;前缀&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置玩家前缀&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家名&amp;gt; meta setsuffix &amp;lt;权重&amp;gt; &amp;lt;后缀&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置玩家后缀&lt;/p&gt;
+&lt;h1 id=&#34;未完待续&#34;&gt;未完待续
+&lt;/h1&gt;&lt;h1 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.mcmod.cn/class/5192.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mc百科&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://luckperms.net/wiki/Home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LuckPerms&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>NDM下载器</title>
         <link>https://FellSakura.github.io/p/ndm%E4%B8%8B%E8%BD%BD%E5%99%A8/</link>
         <pubDate>Fri, 01 May 2026 20:35:45 +0800</pubDate>
