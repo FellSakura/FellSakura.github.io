@@ -8,13 +8,13 @@
         <language>en-us</language>
         <copyright>FellSakura</copyright>
         <lastBuildDate>Sat, 06 Jun 2026 13:49:05 +0800</lastBuildDate><atom:link href="https://FellSakura.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>LuckPerms相关命令</title>
-        <link>https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+        <title>about LuckPerms Commands</title>
+        <link>https://FellSakura.github.io/p/about-luckperms-commands/</link>
         <pubDate>Sat, 06 Jun 2026 13:49:05 +0800</pubDate>
         
-        <guid>https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;img src="https://FellSakura.github.io/p/luckperms%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/LuckPerms.jpg" alt="Featured image of post LuckPerms相关命令" /&gt;&lt;h1 id=&#34;关于luckperms的相关指令&#34;&gt;关于LuckPerms的相关指令
-&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt; 对于不同的服务端而言，基本命令也有些不同，下面以&lt;strong&gt;Paper端&lt;/strong&gt;演示&lt;/p&gt;
+        <guid>https://FellSakura.github.io/p/about-luckperms-commands/</guid>
+        <description>&lt;img src="https://FellSakura.github.io/p/about-luckperms-commands/LuckPerms.jpg" alt="Featured image of post about LuckPerms Commands" /&gt;&lt;h1 id=&#34;关于luckperms的相关指令&#34;&gt;关于LuckPerms的相关指令
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt; 对于不同的服务端而言，基本命令也有些不同，下面以 &lt;strong&gt;Paper端&lt;/strong&gt;演示&lt;/p&gt;
 &lt;table&gt;
 	&lt;thead&gt;
 			&lt;tr&gt;
@@ -47,19 +47,21 @@
 &lt;pre&gt;&lt;code&gt;/lp import &amp;lt;路径&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;导入数据&lt;/p&gt;
-&lt;h2 id=&#34;2-用户管理命令&#34;&gt;2. 用户管理命令
+&lt;h2 id=&#34;2-user&#34;&gt;2. User
 &lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; info 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;查看玩家权限信息&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; parent add &amp;lt;组&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;将玩家加入组&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission set &amp;lt;权限&amp;gt; true
+&lt;h3 id=&#34;21-userpermission&#34;&gt;2.1 UserPermission
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission check &amp;lt;权限&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;对玩家启用某个权限&lt;/p&gt;
+&lt;p&gt;检查玩家是否拥有某些权限&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission set &amp;lt;权限&amp;gt; false
+/lp user &amp;lt;玩家&amp;gt; permission set &amp;lt;权限&amp;gt; true
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;对玩家禁用某个权限&lt;/p&gt;
+&lt;p&gt;对玩家禁用/启用某个权限&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission unset &amp;lt;权限&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;从玩家身上移除权限&lt;/p&gt;
@@ -67,27 +69,49 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;列出玩家所有权限&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission settemp &amp;lt;权限&amp;gt; true &amp;lt;时间&amp;gt;
+/lp user &amp;lt;玩家&amp;gt; permission settemp &amp;lt;权限&amp;gt; false &amp;lt;时间&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;对玩家临时启用某个权限&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission settemp &amp;lt;权限&amp;gt; false &amp;lt;时间&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;对玩家临时禁用某个权限&lt;/p&gt;
+&lt;p&gt;对玩家临时启用/禁用某个权限&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;user&amp;gt; showtracks
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;显示玩家的权限组路线&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;用户名&amp;gt; parent add &amp;lt;权限组名&amp;gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家名&amp;gt; parent add &amp;lt;权限组名&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;查看玩家继承的组&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家1&amp;gt; clone &amp;lt;玩家2&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;将玩家1的数据复制到玩家2身上&lt;/p&gt;
-&lt;h3 id=&#34;前后缀&#34;&gt;前后缀
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta setprefix &amp;lt;权重&amp;gt; &amp;lt;前缀&amp;gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; permission clear
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;清楚玩家权限&lt;/p&gt;
+&lt;h3 id=&#34;22-usermeta&#34;&gt;2.2 UserMeta
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta setprefix &amp;lt;权重&amp;gt; &amp;lt;前缀&amp;gt; 
+/lp user &amp;lt;玩家&amp;gt; meta removeprefix &amp;lt;权重&amp;gt; &amp;lt;前缀&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;设置玩家前缀&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家名&amp;gt; meta setsuffix &amp;lt;权重&amp;gt; &amp;lt;后缀&amp;gt;
+/lp user &amp;lt;玩家&amp;gt; meta removeprefix &amp;lt;权重&amp;gt; &amp;lt;前缀&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;设置玩家后缀&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta info
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看玩家继承的元数据、前缀和后缀&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta set &amp;lt;key&amp;gt; &amp;lt;value&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;为玩家设置键值对&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta unset &amp;lt;key&amp;gt; &amp;lt;value&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消为玩家设置的键值对&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp user &amp;lt;玩家&amp;gt; meta clear [type]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;移除玩家的元字符、前缀和后缀&lt;/p&gt;
+&lt;h2 id=&#34;3group&#34;&gt;3.Group
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/lp creategroup &amp;lt;权限组名&amp;gt;；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/lp listgroups
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;列出所有组&lt;/p&gt;
 &lt;h1 id=&#34;未完待续&#34;&gt;未完待续
 &lt;/h1&gt;&lt;h1 id=&#34;参考文献&#34;&gt;参考文献
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.mcmod.cn/class/5192.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -97,11 +121,11 @@
 </description>
         </item>
         <item>
-        <title>NDM下载器</title>
-        <link>https://FellSakura.github.io/p/ndm%E4%B8%8B%E8%BD%BD%E5%99%A8/</link>
+        <title>Neat Download Manager</title>
+        <link>https://FellSakura.github.io/p/neat-download-manager/</link>
         <pubDate>Fri, 01 May 2026 20:35:45 +0800</pubDate>
         
-        <guid>https://FellSakura.github.io/p/ndm%E4%B8%8B%E8%BD%BD%E5%99%A8/</guid>
+        <guid>https://FellSakura.github.io/p/neat-download-manager/</guid>
         <description>&lt;h1 id=&#34;ndm下载器介绍&#34;&gt;NDM下载器介绍
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NDM (Neat Download Manager)&lt;/strong&gt; 是一款免费、轻量的多线程下载工具，支持 Windows 与 MacOS 系统，功能和 &lt;strong&gt;IDM (Internet Download Manager&lt;/strong&gt; 类似。&lt;/p&gt;
 &lt;h2 id=&#34;软件特色&#34;&gt;软件特色
